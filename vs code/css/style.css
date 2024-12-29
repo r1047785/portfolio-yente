@@ -1,15 +1,48 @@
 /* General reset */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 * {
+  cursor: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
+  cursor: none;
   font-family: raleway;
   background-color: #121212; /* Dark background */
   color: white;
+}
+
+.firefly-cursor {
+  cursor: none;
+  position: absolute;
+
+  width: 5px;
+
+  height: 5px;
+
+  background-color: white;
+
+  opacity: 80%;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  animation: flicker 2s infinite alternate;
+
+  z-index: 9999;
+}
+
+@keyframes flicker {
+  0% {
+    box-shadow: 0 0 8px 3px #fddba3;
+  }
+
+  100% {
+    box-shadow: 0 0 12px 7px #fddba3;
+  }
 }
 
 .container {
