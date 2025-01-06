@@ -15,7 +15,6 @@ body {
 }
 
 .firefly-cursor {
-  cursor: none;
   position: absolute;
 
   width: 5px;
@@ -52,6 +51,7 @@ body {
 }
 
 /* Navbar */
+
 .navbar {
   margin-top: 2em;
   display: flex;
@@ -71,7 +71,7 @@ body {
 }
 
 .navbar a:hover {
-  background-color: white;
+  background-color: #ffea4d;
   color: #121212;
 }
 
@@ -127,7 +127,7 @@ header h1 {
 .about {
   margin-top: 20em;
   font-size: 1.15em;
-  gap: 5em;
+  gap: 10em;
   display: flex;
   text-align: left;
   justify-content: center;
@@ -139,27 +139,60 @@ header h1 {
 }
 
 .about img {
-  margin-bottom: 10em;
-  width: 20em;
+  transition: opacity 0.3s ease-in-out;
+  width: 25em;
+}
+
+.about img:hover {
+  width: 26em;
+  transition: 0.5s ease-in-out;
+}
+
+.boeken {
+  margin-top: 18em;
+  display: inline-block;
+  background-color: #ffea4d;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid transparent;
+}
+
+.boeken:hover {
+  background-color: #ffd700; /* Slightly darker yellow */
+  color: #222;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.boeken:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .my-work {
+  margin-left: 3em;
   margin-top: 4em;
   margin-bottom: 10em;
 
   display: flex;
-  justify-content: center;
+  justify-content: left;
   font-size: 3em;
   font-weight: bolder;
   text-transform: uppercase;
 }
 
 .my-skills {
+  margin-left: 3em;
   margin-top: 4em;
   margin-bottom: 10em;
 
   display: flex;
-  justify-content: center;
+  justify-content: left;
   font-size: 3em;
   font-weight: bolder;
   text-transform: uppercase;
