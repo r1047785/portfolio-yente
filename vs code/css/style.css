@@ -124,6 +124,17 @@ header h1 {
   text-transform: uppercase;
 }
 
+.hidden {
+  opacity: 0;
+  transform: translateY(20px); /* Move text slightly down */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .about {
   margin-top: 20em;
   font-size: 1.15em;
